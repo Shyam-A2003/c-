@@ -1,0 +1,55 @@
+Sabrina and Theo were friends. They felt very bored and decided to play a game with calendar and number of days. Sabrina will give the month and the year as input, and Theo wants to find the number of days in that month. Write a C program using switch case and help Sabrina to find the answer. You should check whether the given year is a leap year. If it is a leap year it will have 29 days in February.
+
+Input & Output Format:
+
+Input consists of two integers.
+
+First input consists of  a month.
+
+Second input consists of a year.
+
+Output consists of a integer.
+
+
+Sample Input:
+
+3
+
+1996
+
+Sample Output:
+
+Number of days is 31
+
+//coding
+
+#include <iostream> 
+using namespace std;
+int main()
+{
+    int month,year;
+    cin>>month>>year;
+    if((month==2) && ((year%400==0) || ((year%100!=0)&&(year%4==0))))
+    { 
+        cout<<"Number of days is 29";
+    }
+        else if (month==2)
+    {
+        cout<<"Number of days is 28";
+    }
+    else if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10|| month==12)
+    {
+
+        cout<<"Number of days is 31";
+    }
+    else if(month==4 || month==6 || month==9 || month==11)
+    { 
+        cout<<"Number of days is 30";
+    }
+    else
+    {
+        cout<<"Invalid month";
+    }
+
+    return 0;
+}
