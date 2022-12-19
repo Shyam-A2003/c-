@@ -1,0 +1,53 @@
+Write a program to find  largest element of an array by recursion.
+
+Input Format
+
+Input consist of n+1 integers. First input corresponds to array size and rest of them are array elements. 
+
+Output consists of the maximum element.
+Sample Input
+
+5
+
+98
+
+65
+
+45
+
+52
+
+75
+
+Sample Output
+
+Largest element of on array is 98
+
+//coding
+
+#include<iostream>
+using namespace std;
+int max(int n)
+{
+    cin>>n;
+    
+    int i;
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    for(i=0;i<n;i++)
+    {
+        if(a[0]<a[i])
+        a[0]=a[i];
+    }
+    cout<<"Largest element of on array is "<<a[0];
+    return 0;
+}
+int main()
+{
+    int n;
+    max(n);
+    
+}
