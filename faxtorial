@@ -1,0 +1,20 @@
+Write a C program to find the factorial of a given number.
+
+Sample Input:
+5
+
+Sample Output:
+
+120#include<iostream>
+using namespace std;
+int main()
+{
+    int i,j,n,c=1;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        j=(n-i);
+        c=c*j;
+    }
+    cout<<c<<" ";
+}
