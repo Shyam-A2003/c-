@@ -1,0 +1,30 @@
+Write a C program to add two dollars and cents:
+
+Sample Input:
+30
+10
+140
+99
+
+Sample Output:
+171
+
+9
+
+//coding
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d,a1,b1,c1,dollars,cents;
+    cin>>a>>b>>c>>d;
+    a1=(a*100)+b;
+    b1=(c*100)+d;
+    c1=a1+b1;
+    dollars=c1/100;
+    cents=c1%100;
+    cout<<dollars<<endl;
+    cout<<cents;
+    
+}
