@@ -1,0 +1,23 @@
+Write a  program to generate the following series – 0, 2, 6, 12, 20…..
+
+Sample Input:
+
+5
+
+Sample Output:
+
+0 2 6 12 20
+
+//coding
+
+#include<iostream>
+using namespace std;
+int main()
+{
+     int n,i;
+     cin>>n;
+     for(i=1;i<=n;i++)
+     {
+        cout<<(i*i)-i<<" ";
+     }
+}
