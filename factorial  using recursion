@@ -1,0 +1,32 @@
+Write a C program to calculate factorial  using recursion
+
+Input & Output Format:
+
+Input consists of one integer.
+
+Output consists of one integer followed by a string.
+Sample Input & Output:
+
+5
+
+Factorial of 5 is 120
+
+//coding
+
+#include<iostream>
+using namespace std;
+int fact(int n)
+{
+    int i,c=1;
+    for(i=1;i<=n;i++)
+    {
+        c=c*i;
+    }
+    return c;
+}
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<"Factorial of"<<" "<<n<<" "<<"is"<<" "<<fact(n);
+}
