@@ -1,0 +1,37 @@
+Write the program to find power of a number using recursion.
+
+Input & Output Format:
+
+Input consists of two integers.
+
+First input consists of a value.
+
+Second input consists of a power value.
+
+Output consists of one integer.
+
+Sample Input
+
+5
+
+2
+
+Sample Output
+
+5 to the power 2 is 25
+
+//coding
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int val(int n1,int n2)
+{
+    return pow(n1,n2);
+}
+int main()
+{
+    int n1,n2;
+    cin>>n1>>n2;
+    cout<<n1<<" to the power "<<n2<<" is "<<val(n1,n2);
+}
