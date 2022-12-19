@@ -23,7 +23,7 @@ Sample Input & Output 2:
 
 #include<iostream>
 using namespace std;
-int prime(int num)
+int prime(int n)
 {
     int c=0,n;
     for(int i=1;i<=n;i++)
@@ -41,10 +41,10 @@ int main()
     cin>>n;
     if(prime(n)<=2)
     {
-        cout<<n<<"is a prime number";
+        cout<<n<<" is a prime number";
     }
     else
     {
-        cout<<n<<"is not a prime number";
+        cout<<n<<" is not a prime number";
     }
 }
