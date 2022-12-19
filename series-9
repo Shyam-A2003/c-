@@ -1,0 +1,34 @@
+Write a program to generate the following series – 1, 4, 27, 16, 125….
+
+Sample Input:
+
+
+5
+
+Sample Output:
+
+1 4 27 16 125
+
+//coding
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,a,b,n;
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        if(i%2==0)
+        {
+            a=i*i;
+            cout<<a<<" ";
+        }
+        if(i%2==1)
+        {
+            b=i*i*i;
+            cout<<b<<" ";
+        }
+        
+    }
+}
