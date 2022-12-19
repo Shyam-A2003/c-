@@ -1,0 +1,28 @@
+Write a C program to find whether the given number is Prime number or not.
+
+Sample Input:
+
+2
+
+Sample Output:
+
+Prime
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a;
+    b=6*a+1;
+    if(b==0)
+    {
+        
+        cout<<"Prime";
+        
+    }
+    else
+    {
+        cout<<"Not Prime";
+    }
+}
